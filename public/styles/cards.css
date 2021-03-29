@@ -1,0 +1,45 @@
+#cardsBeneficios .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#cardsBeneficios .row .cardBeneficio{
+
+    padding:2vh;
+
+    background-color: #082A60;
+    color: #A0EDFD;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+#cardsBeneficios .cardBeneficio .card-title{
+    font-weight: 600;
+   
+}
+
+#cardsBeneficios .cardBeneficio .card-body img{
+    width: 8vw;
+}
+
+#cardsBeneficios .cardBeneficio .card-text{
+    font-weight: 300;
+}
+
+/*Media query */
+@media (max-width: 991.98px) { 
+
+    
+    #cardsBeneficios .cardBeneficio .card-body img{
+        width: 20vw;
+    }
+
+    #cardsBeneficios .row{
+   
+        grid-template-columns: 1fr;
+    }
+    
+
+}

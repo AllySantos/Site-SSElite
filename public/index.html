@@ -2,73 +2,298 @@
 <html lang="en">
 
 <head>
+
+    <!--CSS da Página -->
+    <link href="./styles/index.css" rel="stylesheet">
+    <link href="./styles/banner.css" rel="stylesheet">
+    <link href="./styles/menu.css" rel="stylesheet">
+    <link href="./styles/cards.css" rel="stylesheet">
+    <link href="./styles/servicos.css" rel="stylesheet">
+
+    <link href="./styles/parceiros.css" rel="stylesheet">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Lightslider-->
+    <link type="text/css" rel="stylesheet" href="../utils/lightslider/src/css/lightslider.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../utils/lightslider/src/js/lightslider.js"></script>
+
+    <!-- Config LightSlider-->
+    <script src="scripts/lightSliderServicos.js"></script>
+    <script src="scripts/lightSliderParceiros.js"></script>
+
+    <!-- My Style LightSlider-->
+    <link href="./styles/lightSlider.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-
-    <!-- Default bootstrap-->
-    <link href="./index.css" rel="stylesheet">
     <title>Hello, world!</title>
 </head>
 
 <body>
 
-    <nav class="menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
 
-        <div id="logoMenu">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" alt="" width="200">
+            </a>
 
-            <img src="img/logo.svg" alt="Logo da SS Elite na horizontal">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between flex-grow-0 me-5" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Seguro Auto
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Seguro Empresarial
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Seguro Pessoal
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+
+        </div>
+    </nav>
+
+    <div class="banner-fundo container-fluid p-0" id="mainBanner">
+
+        <div class="texto-banner">
+            <h1 class="h1">Segurança para você e quem você ama!</h1>
+            <p>Clique e saiba quais serviços oferecemos para você proteger o que é mais valioso para você</p>
+            <button class="botao-cotacao">Faça sua cotação</button>
         </div>
 
-        <ul class="itens-menu">
-            <li class="item">
-                Seguro Auto
-                <i class="fas fa-angle-down"></i>
+    </div>
 
-                <ul class="subitem-menu">
-                    <li>Seguro sla1</li>
-                    <li>Seguro sla2</li>
-                </ul>
+    <div class="cards container-fluid " id="cardsBeneficios">
+
+        <div class="row ">
+            <div class="col g-5 ">
+                <div class="cardBeneficio card h-100">
+                    <div class="card-body">
+                        <img src="img/icons/clean.svg" class="card-img-top mt-3" alt="...">
+                        <h4 class="card-title mt-5">Tranquilidade</h4>
+
+                        <p class="card-text mt-3 mb-3">Saber que o bem segurado está protegido contra danos é uma alívio
+                            e
+                            se
+                            torna uma preocupação a menos</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col g-5">
+
+                <div class="cardBeneficio card h-100">
+                    <div class="card-body">
+                        <img src="img/icons/padlock.svg" class="card-img-top mt-3" alt="...">
+                        <h4 class="card-title mt-5">Segurança</h4>
+
+                        <p class="card-text mt-3 mb-3">Ter a garantia de que, mesmo que aconteça algo, você está
+                            protegido e a <span style="font-weight: 800;">SS Elite</span> cuidará para que tudo fique
+                            bem </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col g-5">
+
+                <div class="cardBeneficio card h-100">
+                    <div class="card-body">
+                        <img src="img/icons/coins.svg" class="card-img-top mt-5" alt="...">
+                        <h4 class="card-title mt-5">Economia</h4>
+
+                        <p class="card-text mt-3 mb-3">Cuidar para ter uma corretora de confiança ao seu lado é bem
+                            melhor do que arcar com as despesas de algum dano.</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!--SERVICOS-->
+    <div id="servicos" class="container-fluid mt-5 p-5">
+        <ul id="lightSliderServicos">
+            <li>
+                <div class="card card-servicos h-100">
+                    <img src="./img/chaveCarro.jpg" class="card-img-top"
+                        alt="Homem de terno segurando a chave de um veículo">
+                    <div class="card-body">
+                        <h4 class="card-title">Seguro de Carro</h4>
+                        <p class="card-text">Proteção para seu veículo contra roubos, acidentes, desastres naturais e
+                            muito mais.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
             </li>
 
-            <li class="item">
-                Seguro Auto
-                <i class="fas fa-angle-down"></i>
-
-                <ul class="subitem-menu">
-                    <li>Seguro sla1</li>
-                    <li>Seguro sla2</li>
-                </ul>
+            <li>
+                <div class="card card-servicos  h-100">
+                    <img src="./img/bebe.jpg" class="card-img-top" alt="Homem de terno segurando a chave de um veículo">
+                    <div class="card-body">
+                        <h4 class="card-title">Seguro de Vida</h4>
+                        <p class="card-text">Proteção para seu veículo contra roubos, acidentes, desastres naturais e
+                            muito mais.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
             </li>
 
-            <li class="item">
-                Seguro Auto
-                <i class="fas fa-angle-down"></i>
+            <li>
+                <div class="card card-servicos h-100">
+                    <img src="./img/pet.jpg" class="card-img-top" alt="Homem de terno segurando a chave de um veículo">
+                    <div class="card-body">
+                        <h4 class="card-title">Seguro de Pet</h4>
+                        <p class="card-text">Proteção para seu veículo contra roubos, acidentes, desastres naturais e
+                            muito mais.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </li>
 
-                <ul class="subitem-menu">
-                    <li>Seguro sla1</li>
-                    <li>Seguro sla2</li>
-                </ul>
-            </li>
-            <li class="item">
-                Quem somos
+            <li>
+                <div class="card card-servicos  h-100">
+                    <img src="./img/chaveCarro.jpg" class="card-img-top"
+                        alt="Homem de terno segurando a chave de um veículo">
+                    <div class="card-body">
+                        <h4 class="card-title">Seguro de Carro</h4>
+                        <p class="card-text">Proteção para seu veículo contra roubos, acidentes, desastres naturais e
+                            muito mais.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
             </li>
 
-            <li class="item">
-                Contato
+            <li>
+                <div class="card card-servicos  h-100">
+                    <img src="./img/chaveCarro.jpg" class="card-img-top"
+                        alt="Homem de terno segurando a chave de um veículo">
+                    <div class="card-body">
+                        <h4 class="card-title">Seguro de Carro</h4>
+                        <p class="card-text">Proteção para seu veículo contra roubos, acidentes, desastres naturais e
+                            muito mais.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
             </li>
+
+            <li>
+                <div class="card card-servicos  h-100">
+                    <img src="./img/chaveCarro.jpg" class="card-img-top"
+                        alt="Homem de terno segurando a chave de um veículo">
+                    <div class="card-body">
+                        <h4 class="card-title">Seguro de Carro</h4>
+                        <p class="card-text">Proteção para seu veículo contra roubos, acidentes, desastres naturais e
+                            muito mais.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </li>
+
+
         </ul>
-    </nav>
-    <script src="https://kit.fontawesome.com/94602c6a4a.js" crossorigin="anonymous"></script>
+
+        <div class="mt-4  div-botao">
+            <button class="botao-cotacao "> Faça sua cotação </button>
+        </div>
+
+    </div>
+
+    <!-- PARCEIROS -->
+
+    <div class="container-fluid parceiros p-5">
+
+        <h1>Nossos parceiros</h1>
+        <h2>Conheça algumas empresas que trabalham conosco!</h2>
+
+        <ul id="lightSliderParceiros">
+
+        </ul>
+    </div>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/94602c6a4a.js" crossorigin="anonymous"></script>
+
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <script src="./scripts/index.js"></script>
+
+
+
+
+
 </body>
 
 </html>

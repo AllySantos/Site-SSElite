@@ -1,0 +1,78 @@
+#servicos{
+    background-color: #3EC6FF;
+    align-items: center;
+
+    text-align: center;
+}
+
+.div-botao{
+    position: relative;
+   
+    align-items: center;
+}
+
+
+/* CARDS SERVIÇOS */
+
+
+#servicos .card-servicos{
+    background-color: #FDFDFD;
+    color: #9E9E9E;
+
+    text-align: center;
+  
+    border-radius: 15px;
+}
+
+.card-servicos img{
+    border-radius: 10px;
+}
+
+.card-servicos .card-title{
+    font-weight: 600;
+}
+
+.card-servicos .btn{
+    padding: 1vw;
+    margin: 1vw;
+
+    font-weight: 500;
+    background-color: #496087;
+    font-size: 1.1rem;
+
+}    
+
+
+
+  /* Small devices (landscape phones, less than 768px) */
+  @media (min-width: 0px) and (max-width: 575px) { 
+
+
+    .card-servicos .btn{
+        width: 22vw;
+    }
+
+    
+ }
+
+  /* Small devices (landscape phones, less than 768px) */
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+
+
+    .card-servicos .btn{
+        width: 22vw;
+    }
+
+
+    
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 767.99px) and (max-width: 991.98px) { 
+    
+    .card-servicos .btn{
+        width: 15vw;
+    }
+
+
+}

@@ -1,0 +1,16 @@
+.parceiros {
+    color: #949494;
+    align-items: center;
+
+    text-align: center;
+}
+
+.parceiros h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.parceiros h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
