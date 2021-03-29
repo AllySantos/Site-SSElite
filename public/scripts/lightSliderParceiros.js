@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#lightSliderParceiros").lightSlider({
         item: 5,
         autoWidth: false,
-        slideMove: 2, // slidemove will be 1 if loop is true
+        slideMove: 5, // slidemove will be 1 if loop is true
         slideMargin: 0,
 
         addClass: '',
@@ -19,6 +19,8 @@ $(document).ready(function () {
 
         keyPress: false,
         controls: true,
+        prevHtml: '<i class="fas fa-chevron-left"  style="font-size: 2.5rem; color: #3EC6FF;" ></i>',
+        nextHtml: '<i class="fas fa-chevron-right" style="font-size: 2.5rem; color: #3EC6FF;"></i>',
 
 
         rtl: false,
@@ -32,18 +34,32 @@ $(document).ready(function () {
 
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 1100,
                 settings: {
-                    item: 2,
-                    slideMove: 1,
-                    slideMargin: 0,
+                    item: 3,
+                    autoWidth: false,
+                    slideMove: 3, // slidemove will be 1 if loop is true
+                    slideMargin: 30,
+
                 }
             },
             {
-                breakpoint: 576,
+                breakpoint: 1000,
+                settings: {
+                    item: 2,
+                    autoWidth: false,
+                    slideMove: 2,
+                    slideMargin: 30,
+                }
+            },
+
+            {
+                breakpoint: 650,
                 settings: {
                     item: 1,
-                    slideMove: 1
+                    autoWidth: false,
+                    slideMove: 1,
+                    slideMargin: 0,
                 }
             }
         ],

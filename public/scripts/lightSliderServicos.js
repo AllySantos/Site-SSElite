@@ -19,6 +19,10 @@ $(document).ready(function () {
 
         keyPress: false,
         controls: true,
+        prevHtml: '<i class="fas fa-chevron-left" style="font-size: 2.5rem; color: white;"></i>',
+        nextHtml: '<i class="fas fa-chevron-right" style="font-size: 2.5rem; color: white;"></i>',
+
+
 
 
         rtl: false,
