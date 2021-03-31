@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $("#lightSliderParceiros").lightSlider({
-        item: 5,
+        item: 4,
         autoWidth: false,
-        slideMove: 5, // slidemove will be 1 if loop is true
+        slideMove: 4, // slidemove will be 1 if loop is true
         slideMargin: 0,
 
         addClass: '',

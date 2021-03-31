@@ -11,6 +11,8 @@
     <link href="./styles/servicos.css" rel="stylesheet">
     <link href="./styles/parceiros.css" rel="stylesheet">
     <link href="./styles/frase.css" rel="stylesheet">
+    <link href="./styles/formContato.css" rel="stylesheet">
+    <link href="./styles/rodape.css" rel="stylesheet">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -32,7 +34,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>SS Elite</title>
 </head>
 
 <body>
@@ -119,11 +121,11 @@
 
     </div>
 
-    <div class="cards container-fluid " id="cardsBeneficios">
+    <section class="cards container-fluid " id="cardsBeneficios">
 
         <div class="row ">
             <div class="col g-5 ">
-                <div class="cardBeneficio card h-100">
+                <div class="cardBeneficio card h-100" data-aos="fade-down">
                     <div class="card-body">
                         <img src="img/icons/clean.svg" class="card-img-top mt-3" alt="...">
                         <h4 class="card-title mt-5">Tranquilidade</h4>
@@ -140,7 +142,7 @@
 
             <div class="col g-5">
 
-                <div class="cardBeneficio card h-100">
+                <div class="cardBeneficio card h-100" data-aos="fade-down" data-aos-delay="100">
                     <div class="card-body">
                         <img src="img/icons/padlock.svg" class="card-img-top mt-3" alt="...">
                         <h4 class="card-title mt-5">Segurança</h4>
@@ -157,7 +159,7 @@
 
             <div class="col g-5">
 
-                <div class="cardBeneficio card h-100">
+                <div class="cardBeneficio card h-100" data-aos="fade-down" data-aos-delay="300">
                     <div class="card-body">
                         <img src="img/icons/coins.svg" class="card-img-top mt-5" alt="...">
                         <h4 class="card-title mt-5">Economia</h4>
@@ -173,10 +175,10 @@
 
 
         </div>
-    </div>
+    </section>
 
     <!--SERVICOS-->
-    <div id="servicos" class="container-fluid mt-5 p-5">
+    <section id="servicos" class="container-fluid mt-5 p-5">
         <ul id="lightSliderServicos">
             <li>
                 <div class="card card-servicos h-100">
@@ -261,11 +263,11 @@
             <button class="botao-cotacao "> Faça sua cotação </button>
         </div>
 
-    </div>
+    </section>
 
     <!-- PARCEIROS -->
 
-    <div class="container-fluid parceiros p-5">
+    <section class="container-fluid parceiros p-5" data-aos="fade-left" data-aos-duration="3000">
 
         <h1>Nossos parceiros</h1>
         <h2>Conheça algumas empresas que trabalham conosco!</h2>
@@ -273,59 +275,196 @@
         <ul id="lightSliderParceiros" class="m-5">
 
             <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
+                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg"
+                    alt="Logo da empresa Porto Seguro">
             </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-            <li>
-                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/porto-seguro-logo.svg">
-            </li>
-        </ul>
-    </div>
 
+            <li>
+                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/tokio-marine-logo.svg"
+                    alt="Logo da empresa Tokyo Marine">
+            </li>
+
+            <li>
+                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/logo-bradesco.png"
+                    alt="Logo da empresa Bradesco Seguros">
+            </li>
+
+
+            <li>
+                <img class="logo-parceiros align-middle mx-auto" width="10px" src="img/parceiros/logo-azul.svg"
+                    alt="Logo da empresa Azul Seguros">
+            </li>
+
+
+            <li>
+                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/logo-sulamerrica.png"
+                    alt="Logo da empresa Sulamerica Seguros">
+            </li>
+
+
+            <li>
+                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/logo-suhai.png"
+                    alt="Logo da empresa Suhai Seguros">
+            </li>
+
+
+            <li>
+                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/logo-notredame.png"
+                    alt="Logo da empresa Notredame Intermédica">
+            </li>
+
+
+            <li>
+                <img class="logo-parceiros align-middle mx-auto" src="img/parceiros/logo-excelsior.png"
+                    alt="Logo da empresa Excelsior Seguros">
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- BANNER COM FUNDO -->
     <div class="container-fluid frase">
         <h2 class="align-middle">
             Segurança e proteção para quem você mais ama
         </h2>
     </div>
 
+
+    <!-- FORMULARIO DE CONTATO -->
+    <div class="container-fluid form-contato">
+
+        <h1>Faça sua cotação</h1>
+
+        <form class="container-fluid needs-validation" id="formulario" novalidate>
+            <div class="row g-2 mb-3">
+                <div class="col-sm">
+                    <label for="nomeInput" class="form-label">Seu nome <span class="asterisco">*</span></label>
+                    <input type=" text" class="form-control" id="nomeInput" aria-describedby="nomeHelp" minlength="3"
+                        required>
+                    <div class="invalid-feedback">
+                        O nome deve conter mais de 3 caracteres
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm">
+                    <label for="emailInput" class="form-label">Seu melhor email <span class="asterisco">*</span></label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" required
+                        minlength="10">
+                    <div class="invalid-feedback">
+                        Email inválido (deve conter @)
+                    </div>
+                </div>
+            </div>
+
+            <div class="row linha-telefone">
+                <label for="telefoneInput" class="form-label">Seu telefone <span class="asterisco">*</span></label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="dddInput" aria-describedby="dddHelp" pattern="\d{2}"
+                        placeholder="DDD">
+                    <div class="invalid-feedback">
+                        DDD Inválido
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="telefoneInput" aria-describedby="telefoneHelp"
+                        pattern="\d{4,5}-?\d{4}" placeholder="Telefone">
+                    <div class="invalid-feedback">
+                        Telefone Inválido
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="mx-auto mt-4 botao-cotacao">Enviar</button>
+        </form>
+    </div>
+
+    <footer class="container-fluid rodape p-5 ">
+
+        <div class="row linha-1">
+            <div class="col-sm">
+                <img src="img/logo branco.png" class="img-fluid mx-auto"
+                    alt="Logo SS ELite na vertical e totalmente branco">
+            </div>
+
+            <div class="col-sm contato">
+                <h2>Entre em contato</h2>
+                <span>
+                    <i class="far fa-envelope"></i>
+                    <p>comercial@sselitecorretora.com.br</p>
+                </span>
+                <span>
+                    <img src="img/icons/telephone.svg">
+                    <p class="mt-2">(11) 93406-1616</p>
+                </span>
+            </div>
+
+            <div class="col-sm quem-somos">
+
+                <h2>Sobre nós</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices suscipit aliquam.
+                    Suspendisse potenti. Duis sed vehicula nisi, ac tempor orci. Duis sed orci facilisis, vehicula augue
+                    finibus, blandit lectus. Proin felis metus, scelerisque sed dui in, pellentesque molestie ex. Proin
+                    metus massa, faucibus eget congue bibendum, ultrices vel nulla. Nullam luctus cursus mi sit amet
+                    maximus.
+                </p>
+            </div>
+
+        </div>
+        <h2 class="mb-4">Mapa do site</h2>
+        <div class="row linha-2">
+
+
+            <div class="col-sm">
+                <h3>Seguro Auto</h3>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+
+            </div>
+
+            <div class="col-sm">
+                <h3>Seguro Auto</h3>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+            </div>
+
+            <div class="col-sm">
+                <h3>Seguro Auto</h3>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+            </div>
+
+            <div class="col-sm">
+                <h3>Seguro Auto</h3>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+                <p> <a href="#">Seguro 01</a> </p>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
@@ -336,11 +475,24 @@
     <script src="https://kit.fontawesome.com/94602c6a4a.js" crossorigin="anonymous"></script>
 
 
+
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 
     <script src="./scripts/index.js"></script>
 
+    <!-- Form validation -->
+    <script src="./scripts/validateForm.js"></script>
 
+    <!-- Scrolls effects-->
+    <script src="scripts/animation.js"></script>
+
+    <!-- AOS Imports -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 
 

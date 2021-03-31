@@ -1,3 +1,16 @@
+.cardBeneficio{
+    transition: all .5s;
+}
+.hide {
+    opacity:0;
+   
+}
+.show {
+    opacity:1;
+  
+}
+
+
 #cardsBeneficios .row{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -14,6 +27,8 @@
 
     border-radius: 15px;
 }
+
+
 
 #cardsBeneficios .cardBeneficio .card-title{
     font-weight: 600;

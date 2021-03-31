@@ -1,0 +1,61 @@
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    background-color: #265F77;
+    width: 100vw;
+
+   
+    align-items: center;
+    
+    padding: 4vw;
+    
+    text-align: left;
+
+}
+
+.form-contato h1{
+    color: white;
+    font-weight: 700;
+}
+
+.form-contato form{
+    width: 45vw;
+    margin-top: 5vh;
+    
+   
+
+}
+
+.form-contato input{
+    border-radius: 5px;
+}
+
+
+.form-contato button{
+    display: block;
+}
+
+
+.form-contato form label{
+
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.form-contato .asterisco{
+    color: #0089C2;
+    
+}
+
+
+
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) { 
+
+    .linha-telefone{
+        gap: 10px;
+    }
+    
+ }
+
